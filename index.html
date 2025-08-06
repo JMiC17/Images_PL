@@ -1,46 +1,51 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SC Braga - Jogadores</title>
 
-  <style type="text/css">
+  <style>
     body {
-      background-color: #fafafa;
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
       margin: 0;
-      padding: 40px;
-      font-family: sans-serif;
+      padding: 20px;
       text-align: center;
     }
 
-    .image-container {
-      margin: 30px auto;
-      width: fit-content;
+    h1 {
+      margin-bottom: 30px;
+      color: #333;
     }
 
-    img {
-      display: block;
-      margin: auto;
-      cursor: zoom-in;
-      background-color: hsl(0, 0%, 90%);
-      transition: background-color 300ms ease-in-out, transform 300ms ease-in-out;
-      -webkit-user-select: none;
-      -webkit-transform: scale(1);
-      transform: scale(1);
-      max-width: 100%;
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .gallery img {
+      max-width: 150px;
       height: auto;
+      border-radius: 8px;
+      background-color: hsl(0, 0%, 90%);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s ease, background-color 0.3s ease;
+      cursor: zoom-in;
+      -webkit-user-select: none;
     }
 
-    img:hover {
-      -webkit-transform: scale(1.05);
+    .gallery img:hover {
       transform: scale(1.05);
       background-color: hsl(0, 0%, 80%);
     }
 
-    h1 {
-      color: #333;
-      margin-bottom: 50px;
+    @media (max-width: 600px) {
+      .gallery img {
+        max-width: 100px;
+      }
     }
   </style>
 </head>
@@ -48,16 +53,11 @@
 
   <h1>SC Braga - Jogadores</h1>
 
-  <div class="image-container">
-    <img src="https://raw.githubusercontent.com/jmic17/Images_PL/main/Imagens/Afonso_Patrao_67_SCBraga.png" alt="Afonso Patrão">
-  </div>
-
-  <div class="image-container">
-    <img src="https://raw.githubusercontent.com/jmic17/Images_PL/main/Imagens/Alaa_Bellaarouch_36_SCBraga.png" alt="Alla Bellaarouch">
-  </div>
-
-  <div class="image-container">
-    <img src="https://raw.githubusercontent.com/jmic17/Images_PL/main/Imagens/Amine_Ouazzani_9_SCBraga.png" alt="Amine Ouazzani">
+  <div class="gallery">
+    <img src="https://jmic17.github.io/Images_PL/Imagens/Afonso_Patrao_67_SCBraga.png" alt="Afonso Patrão">
+    <img src="https://jmic17.github.io/Images_PL/Imagens/Alaa_Bellaarouch_36_SCBraga.png" alt="Alaa Bellaarouch">
+    <img src="https://jmic17.github.io/Images_PL/Imagens/Amine_Ouazzani_9_SCBraga.png" alt="Amine Ouazzani">
+    <!-- Adicione mais imagens abaixo no mesmo formato -->
   </div>
 
 </body>
