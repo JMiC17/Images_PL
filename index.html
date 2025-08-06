@@ -1,26 +1,64 @@
+<!DOCTYPE html>
 <html lang="pt">
 <head>
-  <meta charset="UTF-8" />
-  <title>Jogadores SC Braga</title>
-  <style>
-    img.jogador {
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SC Braga - Jogadores</title>
+
+  <style type="text/css">
+    body {
+      background-color: #fafafa;
+      margin: 0;
+      padding: 40px;
+      font-family: sans-serif;
+      text-align: center;
+    }
+
+    .image-container {
+      margin: 30px auto;
+      width: fit-content;
+    }
+
+    img {
       display: block;
-      -webkit-user-select: none;
-      margin: 20px auto;
+      margin: auto;
       cursor: zoom-in;
       background-color: hsl(0, 0%, 90%);
-      transition: background-color 300ms;
-      height: 240px;
-      width: 320px;
+      transition: background-color 300ms ease-in-out, transform 300ms ease-in-out;
+      -webkit-user-select: none;
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      max-width: 100%;
+      height: auto;
+    }
+
+    img:hover {
+      -webkit-transform: scale(1.05);
+      transform: scale(1.05);
+      background-color: hsl(0, 0%, 80%);
+    }
+
+    h1 {
+      color: #333;
+      margin-bottom: 50px;
     }
   </style>
 </head>
 <body>
-  <h1 style="text-align:center;">Jogadores SC Braga</h1>
 
-  <img class="jogador" src="https://jmic17.github.io/Images_PL/Imagens/Afonso_Patrao_67_SCBraga.png" alt="Afonso Patrão" />
-  <img class="jogador" src="https://jmic17.github.io/Images_PL/Imagens/Alaa_Bellaarouch_36_SCBraga.png" alt="Outro Jogador" />
-  <img class="jogador" src="https://jmic17.github.io/Images_PL/Imagens/Amine_Ouazzani_9_SCBraga.png" alt="Terceiro Jogador" />
+  <h1>SC Braga - Jogadores</h1>
+
+  <div class="image-container">
+    <img src="https://jmic17.github.io/Images_PL/Imagens/Afonso_Patrao_67_SCBraga.png" alt="Afonso Patrão">
+  </div>
+
+  <div class="image-container">
+    <img src="https://jmic17.github.io/Images_PL/Imagens/Alaa_Bellaarouch_36_SCBraga.png" alt="Zalazar">
+  </div>
+
+  <div class="image-container">
+    <img src="https://jmic17.github.io/Images_PL/Imagens/Amine_Ouazzani_9_SCBraga.png" alt="Paulo Oliveira">
+  </div>
 
 </body>
 </html>
